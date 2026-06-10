@@ -1,0 +1,94 @@
+{
+  "factors": [
+    {
+      "id": "short_reversal_5d",
+      "status": "template",
+      "hypothesis": "Short-term overreaction reverts over the next rebalance period.",
+      "owner": "personal",
+      "created_at": "2026-06-10",
+      "data_inputs": ["close"],
+      "valid_universe": "CSI500/CSI1000",
+      "rebalance": "weekly",
+      "definition_of_done": [
+        "OOS Rank IC > 0.025",
+        "ICIR > 0.6",
+        "top-bottom spread after cost > 0",
+        "corr_with_existing < 0.7"
+      ],
+      "latest_result": null,
+      "notes": "Higher score means stronger recent reversal candidate."
+    },
+    {
+      "id": "momentum_20d",
+      "status": "template",
+      "hypothesis": "Recent medium-horizon winners continue to outperform.",
+      "owner": "personal",
+      "created_at": "2026-06-10",
+      "data_inputs": ["close"],
+      "valid_universe": "CSI500/CSI1000",
+      "rebalance": "weekly",
+      "definition_of_done": [
+        "OOS Rank IC > 0.025",
+        "ICIR > 0.6",
+        "top-bottom spread after cost > 0",
+        "corr_with_existing < 0.7"
+      ],
+      "latest_result": null,
+      "notes": "Higher score means stronger 20-day momentum."
+    },
+    {
+      "id": "low_volatility_20d",
+      "status": "template",
+      "hypothesis": "Lower realized volatility stocks are compensated in choppy markets.",
+      "owner": "personal",
+      "created_at": "2026-06-10",
+      "data_inputs": ["close"],
+      "valid_universe": "CSI500/CSI1000",
+      "rebalance": "weekly",
+      "definition_of_done": [
+        "OOS Rank IC > 0.025",
+        "ICIR > 0.6",
+        "top-bottom spread after cost > 0",
+        "corr_with_existing < 0.7"
+      ],
+      "latest_result": null,
+      "notes": "Higher score means lower realized volatility."
+    },
+    {
+      "id": "turnover_20d",
+      "status": "template",
+      "hypothesis": "Trading activity contains liquidity and attention information.",
+      "owner": "personal",
+      "created_at": "2026-06-10",
+      "data_inputs": ["turnover"],
+      "valid_universe": "CSI500/CSI1000",
+      "rebalance": "weekly",
+      "definition_of_done": [
+        "OOS Rank IC > 0.025",
+        "ICIR > 0.6",
+        "top-bottom spread after cost > 0",
+        "corr_with_existing < 0.7"
+      ],
+      "latest_result": null,
+      "notes": "Higher score means higher average recent turnover."
+    },
+    {
+      "id": "quality_roe",
+      "status": "template",
+      "hypothesis": "Higher accounting profitability is rewarded after accounting-data timing controls.",
+      "owner": "personal",
+      "created_at": "2026-06-10",
+      "data_inputs": ["roe", "roa", "gross_margin", "net_profit_growth"],
+      "valid_universe": "CSI500/CSI1000",
+      "rebalance": "weekly",
+      "definition_of_done": [
+        "OOS Rank IC > 0.025",
+        "ICIR > 0.6",
+        "top-bottom spread after cost > 0",
+        "corr_with_existing < 0.7"
+      ],
+      "latest_result": null,
+      "notes": "Higher score means stronger available quality metric."
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "quant-harness"
+version = "0.1.0"
+description = "A minimal personal quantitative research harness for factor research."
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = ["PyYAML>=6.0"]
+
+[project.scripts]
+qh = "qh.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]

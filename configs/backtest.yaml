@@ -1,0 +1,34 @@
+data:
+  curated_daily_path: data/curated/daily_prices.csv
+  feature_output_dir: data/features
+  run_output_dir: runs
+
+calendar:
+  rebalance_frequency: weekly
+  rebalance_weekday: 4
+  execution_lag_days: 1
+
+selection:
+  top_quantile: 0.2
+  bottom_quantile: 0.2
+  min_names: 5
+
+costs:
+  commission_bps: 3
+  slippage_bps: 5
+  stamp_duty_sell_bps: 5
+
+samples:
+  train:
+    start: "2016-01-01"
+    end: "2020-12-31"
+  validation:
+    start: "2021-01-01"
+    end: "2022-12-31"
+  test:
+    start: "2023-01-01"
+    end: "2025-12-31"
+
+annualization:
+  daily_periods: 252
+  weekly_periods: 52

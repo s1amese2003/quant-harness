@@ -1,0 +1,21 @@
+portfolio_limits:
+  max_single_name_active_weight: 0.03
+  max_industry_active_deviation: 0.05
+  max_weekly_turnover: 1.5
+  max_daily_turnover: 0.5
+  max_tracking_error: 0.06
+  max_drawdown_over_benchmark: 0.05
+
+factor_gate:
+  min_rank_ic_mean: 0.025
+  min_icir: 0.6
+  min_long_short_return_after_cost: 0.0
+  max_turnover_annual: 8.0
+  max_drawdown: -0.2
+  max_corr_with_existing: 0.7
+
+data_boundaries:
+  require_asof_date: true
+  require_effective_date: true
+  require_source: true
+  max_execution_lag_days: 1

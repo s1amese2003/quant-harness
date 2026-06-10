@@ -1,0 +1,17 @@
+__pycache__/
+*.py[cod]
+*$py.class
+
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+data/raw/
+data/staged/
+data/curated/
+data/features/
+runs/
+reports/
+
+*.duckdb
+*.duckdb.wal
